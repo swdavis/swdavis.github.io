@@ -48,7 +48,7 @@
     <p class="caption">Density in the orbital plane (top) and a vertical slice (bottom) for hydrodynamic and MHD simulations of accretion flow formation after a tidal disruption event. From Meza et al. (2025).</p>
   </div>
   <div>
-    <p>When a star passes too close to a supermassive black hole, it is torn apart by tidal forces and much of its debris eventually returns to the black hole. We use the radiation magnetohydrodynamics capabilities of Athena++ to follow the returning debris stream as it collides with itself, circularizes, and forms an accretion flow. These simulations allow us to predict the emission from tidal disruption events, from the earliest pre-peak emission through the evolution of the photosphere and the X-ray variability that accompanies disk formation, and to explore the role that magnetic fields play in the resulting accretion and outflows.</p>
+    <p>When a star passes too close to a supermassive black hole, it is torn apart by tidal forces and much of its debris eventually returns to the black hole. We use the radiation magnetohydrodynamics capabilities of both Athena++ and AthenaK to follow the returning debris stream as it collides with itself, circularizes, and forms an accretion flow. These simulations allow us to predict the emission from tidal disruption events, from the earliest pre-peak emission through the evolution of the photosphere and the X-ray variability that accompanies disk formation, and to explore the role that magnetic fields play in the resulting accretion and outflows.</p>
     <p class="people"><b>Group members:</b> Maria Renee Meza, Xiaoshan Huang (former member)<br>
       <b>Collaborators:</b> Yan-Fei Jiang</p>
     <p class="people"><b>Recent papers:</b></p>
@@ -71,14 +71,13 @@
     <p class="caption">Gas density (left half of each panel) and radiation energy density (right half) for radiation GRMHD simulations of accretion onto stellar-mass black holes spanning a range of Eddington ratios and spins. From Zhang et al. (2025).</p>
   </div>
   <div>
-    <p>Black hole X-ray binaries are bright, nearby laboratories for studying accretion in strong gravity. Using the general relativistic radiation magnetohydrodynamics framework developed for Athena++, which solves the radiation transfer equation directly rather than relying on approximate closures, we model accretion onto stellar-mass black holes across a wide range of accretion rates, from sub-Eddington through super-Eddington flows. These simulations address how the structure of the disk, the launching of winds and jets, and the radiative efficiency of the flow change with accretion rate and black hole spin.</p>
+    <p>Black hole X-ray binaries are bright, nearby laboratories for studying accretion in strong gravity. Using the general relativistic radiation magnetohydrodynamics capabilities of the AthenaK code, which solves the radiation transfer equation directly rather than relying on approximate closures, we model accretion onto stellar-mass black holes across a wide range of accretion rates, from sub-Eddington through super-Eddington flows. These simulations address how the structure of the disk, the launching of winds and jets, and the radiative efficiency of the flow change with accretion rate and black hole spin.</p>
     <p class="people"><b>Collaborators:</b> Lizhong Zhang, Jim Stone, Yan-Fei Jiang, Patrick Mullen, Chris White, Omer Blaes</p>
     <p class="people"><b>Recent papers:</b></p>
     <ul>
       <li><a href="https://ui.adsabs.harvard.edu/abs/2026ApJ..1009...49Z/abstract">Radiation GRMHD Models of Accretion onto Stellar-mass Black Holes. III. Near-Eddington Accretion</a>, Zhang et al. 2026, ApJ, 1009, 49</li>
       <li><a href="https://ui.adsabs.harvard.edu/abs/2026ApJ..1001..138Z/abstract">Radiation GRMHD Models of Accretion onto Stellar-mass Black Holes. II. Super-Eddington Accretion</a>, Zhang et al. 2026, ApJ, 1001, 138</li>
       <li><a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...995...26Z/abstract">Radiation GRMHD Models of Accretion onto Stellar-mass Black Holes. I. Survey of Eddington Ratios</a>, Zhang et al. 2025, ApJ, 995, 26</li>
-      <li><a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...949..103W/abstract">An Extension of the Athena++ Code Framework for Radiation-magnetohydrodynamics in General Relativity Using a Finite-solid-angle Discretization</a>, White et al. 2023, ApJ, 949, 103</li>
     </ul>
   </div>
 </div>
@@ -136,11 +135,12 @@
     <p class="caption">Binned Monte Carlo spectra compared with a semi-analytic solution (green curve) for resonant scattering in a sphere with a line center optical depth of 10<sup>7</sup>. From McClellan et al. (2022).</p>
   </div>
   <div>
-    <p>Lyman <var>&alpha;</var> transit observations probe the extended, escaping upper atmospheres of planets irradiated by their host stars. Because Lyman <var>&alpha;</var> photons scatter many times before escaping optically thick gas, interpreting these observations requires accurate resonant scattering calculations. We have developed semi-analytic solutions for the escape of Lyman <var>&alpha;</var> photons from optically thick media that include a self-consistent treatment of the boundary conditions and agree well with Monte Carlo calculations. These solutions provide the basis for accelerated Monte Carlo methods for modeling Lyman <var>&alpha;</var> transfer in exoplanet atmospheres.</p>
+    <p>Lyman <var>&alpha;</var> transit observations probe the extended, escaping upper atmospheres of planets irradiated by their host stars. Because Lyman <var>&alpha;</var> photons scatter many times before escaping optically thick gas, interpreting these observations requires accurate resonant scattering calculations. We have developed semi-analytic solutions for the escape of Lyman <var>&alpha;</var> photons from optically thick media that include a self-consistent treatment of the boundary conditions and agree well with Monte Carlo calculations. These solutions provide the basis for accelerated Monte Carlo methods for modeling Lyman <var>&alpha;</var> transfer in exoplanet atmospheres. We have also studied how refraction affects line and continuum light passing through exoplanet atmospheres during transit.</p>
     <p class="people"><b>Group members:</b> Connor McClellan (former member)<br>
-      <b>Collaborators:</b> Phil Arras, Chase Funkhauser</p>
+      <b>Collaborators:</b> Phil Arras, Chase Funkhauser, Jose Arita-Escalante</p>
     <p class="people"><b>Recent papers:</b></p>
     <ul>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...957...93A/abstract">Refraction of Line and Continuum Light in Exoplanet Atmospheres</a>, Arita-Escalante et al. 2023, ApJ, 957, 93</li>
       <li><a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...934...37M/abstract">A Novel Solution for Resonant Scattering Using Self-consistent Boundary Conditions</a>, McClellan et al. 2022, ApJ, 934, 37</li>
     </ul>
   </div>
@@ -202,6 +202,51 @@
     <p>Thermonuclear X-ray bursts occur when material accreted onto the surface of a neutron star ignites in a runaway nuclear burning event. In the most energetic bursts, the luminosity reaches the Eddington limit and radiation pressure lifts the photosphere off the stellar surface. We combine MESA calculations of the burst evolution with radiation hydrodynamic simulations using Athena++ to follow the expansion of the photosphere and the accompanying mass loss. Results from this project are in preparation.</p>
     <p class="people"><b>Group members:</b> Connor McClellan (former member)<br>
       <b>Collaborators:</b> Nevin Weinberg, Ishaan Varshney</p>
+  </div>
+</div>
+
+<!-- Code development -->
+<div class="heading">
+  <h2><big>Code and Algorithm Development for Radiation Magnetohydrodynamics</big></h2>
+</div>
+<div class="flex-container project">
+  <div>
+    <img alt="Radiation beams propagating around a spinning black hole in a test of the general relativistic radiation transfer scheme" src="images/research_code.png">
+    <p class="caption">Two beams of radiation propagating around a spinning black hole, a test of the general relativistic radiation transfer scheme. The green curves show the expected null geodesics. From White et al. (2023).</p>
+  </div>
+  <div>
+    <p>Much of the group's research relies on numerical methods for coupling radiation transfer to the dynamics of gas and magnetic fields. We contribute to the development of these methods, including a general relativistic extension of the Athena++ radiation magnetohydrodynamics framework that solves the time-dependent transfer equation on a finite-solid-angle angular grid, a covariant formulation of radiative transfer in black hole spacetimes, and time-dependent radiation hydrodynamics on a moving mesh. These tools enable the simulations of black hole accretion, tidal disruption events, and outflows described above.</p>
+    <p class="people"><b>Collaborators:</b> Chris White, Patrick Mullen, Yan-Fei Jiang, Jim Stone, Viktoriya Morozova, Lizhong Zhang, Charles Gammie, Philip Chang</p>
+    <p class="people"><b>Recent papers:</b></p>
+    <ul>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...949..103W/abstract">An Extension of the Athena++ Code Framework for Radiation-magnetohydrodynamics in General Relativity Using a Finite-solid-angle Discretization</a>, White et al. 2023, ApJ, 949, 103</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2020MNRAS.493.5397C/abstract">Time-dependent Radiation Hydrodynamics on a Moving Mesh</a>, Chang et al. 2020, MNRAS, 493, 5397</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...888...94D/abstract">Covariant Radiative Transfer for Black Hole Spacetimes</a>, Davis &amp; Gammie 2020, ApJ, 888, 94</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Cosmic ray and radiation driven winds -->
+<div class="heading">
+  <h2><big>Cosmic Ray and Radiation Driven Winds in Star-forming Environments</big></h2>
+</div>
+<div class="flex-container project">
+  <div>
+    <img alt="Density in simulations of cosmic ray driven outflows with increasing cosmic ray flux" src="images/crwind.png">
+    <p class="caption">Gas density in simulations of an atmosphere subject to an increasing flux of cosmic rays (left to right). At high flux, cosmic ray pressure gradients drive an extended outflow. From Huang &amp; Davis (2022).</p>
+  </div>
+  <div>
+    <p>Feedback from star formation regulates the growth of galaxies, in part by driving galactic winds. We study how cosmic rays and radiation pressure from young stars accelerate gas in star-forming environments. Our simulations show that a sufficiently large cosmic ray flux can launch outflows that restructure an initially hydrostatic atmosphere and that cosmic rays can drive the formation of multiphase gas through thermal instability. We have also used radiation hydrodynamic simulations to study how radiation pressure on dust accelerates clouds and drives dusty winds in rapidly star-forming galaxies.</p>
+    <p class="people"><b>Group members:</b> Xiaoshan Huang (former member), Dong Zhang (former member)<br>
+      <b>Collaborators:</b> Yan-Fei Jiang, Jim Stone</p>
+    <p class="people"><b>Recent papers:</b></p>
+    <ul>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...931..140H/abstract">Cosmic-Ray-driven Multiphase Gas Formed via Thermal Instability</a>, Huang et al. 2022, ApJ, 931, 140</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2022MNRAS.511.5125H/abstract">The Launching of Cosmic Ray-driven Outflows</a>, Huang &amp; Davis 2022, MNRAS, 511, 5125</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...893...50H/abstract">Dusty Cloud Acceleration with Multiband Radiation</a>, Huang et al. 2020, ApJ, 893, 50</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2018ApJ...854..110Z/abstract">Dusty Cloud Acceleration by Radiation Pressure in Rapidly Star-forming Galaxies</a>, Zhang et al. 2018, ApJ, 854, 110</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2017ApJ...839...54Z/abstract">Radiation Hydrodynamic Simulations of Dust-driven Winds</a>, Zhang &amp; Davis 2017, ApJ, 839, 54</li>
+    </ul>
   </div>
 </div>
 
