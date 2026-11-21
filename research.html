@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <title>Research</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <style>
+      .project img { width:400px; height:auto; margin:5px 20px; vertical-align:bottom; }
+      .project .caption { font-size:16px; margin:4px 20px; max-width:400px; }
+      .project ul { font-size:20px; margin-top:4px; }
+      .project .people { font-size:20px; }
+    </style>
   </head>
   <body>
     <div class="flex-banner">
@@ -15,77 +21,189 @@
 	</div>
     </div>
     <div class="topnav">
-    
+
   <a href="/" >Home</a>
-  
+
   <a href="/davis.html" >Shane Davis</a>
-  
+
   <a href="/people.html" >Members</a>
-  
+
   <a href="/research.html" class="active">Research</a>
-  
+
   <a href="/news.html" >News</a>
-  
-</div>
 
-    <div class="heading">
-  <p>A few recent papers (published, in press, submitted, or nearing submission) and active research projects led by group members are briefly summarized below.
 </div>
 
 <div class="heading">
-  <h2><big>Resonant Scattering in a Uniform Sphere with Large Optical Depth</big></h2>
+  <p>Research in the group is organized around the projects summarized below. For each project we list the group members and collaborators involved and a selection of recent papers. A more complete list of publications is available in our <a href="https://ui.adsabs.harvard.edu/public-libraries/eWemzjhQREyzg3Lz3tK8eQ">ADS library</a>.</p>
 </div>
 
-<div class="flex-container">
-  <div>
-    <img alt="Ly alpha Spectrum" src="images/lyalp.png" style="width:400px;height:400px;margin:5px 20px;vertical-align:bottom;">
-  </div>
-  <div>
-    <p><p>Connor McClellan is leading a project to construct semi-analytic solutions for the escape of Lyman <var>&alpha;</var> photons from a uniform, optically thick sphere.  Comparison with Monte Carlo calculations shows excellent agreement for sufficiently large line center optical depths.  We plan to use these semi-analytic solution as the basis for an acceleration scheme in future Monte Carlo calculations.  The plot on the left shows a comparison of binned Monte Carlo datapoints with a semi-analytic solution (green curve) for a line center optical depth of 10<sup>7</sup>. The x-axis shows photon frequency in Doppler widths. The photons are launched with different initial frequencies (grey vertical line) in the different panels. Our new solution includes a proper treatment of the boundary condition that provides better agreement with the Monte Carlo results.</p>
-</p>
-    
-    <a href=""></a>
-    
-  </div> 
-</div>
-
-
+<!-- Tidal disruption events -->
 <div class="heading">
-  <h2><big>The Launching of Cosmic Ray Driven Outflows</big></h2>
+  <h2><big>Simulations of Tidal Disruption Events</big></h2>
 </div>
-
-<div class="flex-container">
+<div class="flex-container project">
   <div>
-    <img alt="CR Wind" src="images/crwind.png" style="width:400px;height:400px;margin:5px 20px;vertical-align:bottom;">
+    <img alt="Density slices from simulations of accretion flow formation after a tidal disruption event" src="images/research_tde.png">
+    <p class="caption">Density in the orbital plane (top) and a vertical slice (bottom) for hydrodynamic and MHD simulations of accretion flow formation after a tidal disruption event. From Meza et al. (2025).</p>
   </div>
   <div>
-    <p><p>Xiaoshan Huang led a project to study the effects of an applied flux of cosmic rays on an initially hydrostatic atmosphere.  Her numerical simulation results show that if the cosmic ray flux exceeds a characteristic value large outflows of mass will be accelerated by the cosmic ray pressure gradients that form, restructuring the atmosphere.  The plot on the left shows the 2D density distribution of the gas in a series of runs with cosmic ray flux increasing from left to right. The higher flux runs have more extended density distributions due to the outflow. One can see inhomogenities forming due to the cosmic ray acoustic instability.</p>
-</p>
-    
-    <a href="https://ui.adsabs.harvard.edu/abs/2021arXiv210511506H/abstract">ADS Link</a>
-    
-  </div> 
+    <p>When a star passes too close to a supermassive black hole, it is torn apart by tidal forces and much of its debris eventually returns to the black hole. We use the radiation magnetohydrodynamics capabilities of Athena++ to follow the returning debris stream as it collides with itself, circularizes, and forms an accretion flow. These simulations allow us to predict the emission from tidal disruption events, from the earliest pre-peak emission through the evolution of the photosphere and the X-ray variability that accompanies disk formation, and to explore the role that magnetic fields play in the resulting accretion and outflows.</p>
+    <p class="people"><b>Group members:</b> Maria Renee Meza, Xiaoshan Huang (former member)<br>
+      <b>Collaborators:</b> Yan-Fei Jiang</p>
+    <p class="people"><b>Recent papers:</b></p>
+    <ul>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2026ApJ..1009...64H/abstract">X-Ray Variability and Photosphere Evolution during Accretion Disk Formation in Tidal Disruption Events</a>, Huang et al. 2026, ApJ, 1009, 64</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...993...57M/abstract">Radiation-magnetohydrodynamic Simulations of Accretion Flow Formation After a Tidal Disruption Event</a>, Meza et al. 2025, ApJ, 993, 57</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...974..165H/abstract">Pre-peak Emission in Tidal Disruption Events</a>, Huang et al. 2024, ApJ, 974, 165</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...953..117H/abstract">A Bright First Day for Tidal Disruption Events</a>, Huang et al. 2023, ApJ, 953, 117</li>
+    </ul>
+  </div>
 </div>
 
-
+<!-- Black hole X-ray binaries -->
 <div class="heading">
-  <h2><big>The black hole spin in GRS 1915+105, revisited</big></h2>
+  <h2><big>Simulations of Black Hole X-ray Binaries</big></h2>
 </div>
-
-<div class="flex-container">
+<div class="flex-container project">
   <div>
-    <img alt="GRS1915 4 Panel" src="images/grs1915hist.png" style="width:400px;height:400px;margin:5px 20px;vertical-align:bottom;">
+    <img alt="Density and radiation energy density for radiation GRMHD simulations at several Eddington ratios" src="images/research_xrb.png">
+    <p class="caption">Gas density (left half of each panel) and radiation energy density (right half) for radiation GRMHD simulations of accretion onto stellar-mass black holes spanning a range of Eddington ratios and spins. From Zhang et al. (2025).</p>
   </div>
   <div>
-    <p><p>Bri Mills led a project to fit RXTE observations of GRS 1915+105 with accretion disk models to estimate the black hole spin while accounting for uncertainties in the distance to the source.  The plot on the left shows a number of samples of the distance to the source, observer inclination, and black hole mass.  The points are distributed according to uncertainties on the measured distance.  The blue points represent system parameters for which good fits are possible while the red points represent poor fits.  The black cross shows the results for the most likely system parameters.  The panel in the lower right shows a histogram of the best fit spin, providing a sense of the uncertainty in the best-fit spin due to the uncertainty in the system parameters.</p>
-</p>
-    
-    <a href="https://ui.adsabs.harvard.edu/abs/2021arXiv210111655M/abstract">ADS Link</a>
-    
-  </div> 
+    <p>Black hole X-ray binaries are bright, nearby laboratories for studying accretion in strong gravity. Using the general relativistic radiation magnetohydrodynamics framework developed for Athena++, which solves the radiation transfer equation directly rather than relying on approximate closures, we model accretion onto stellar-mass black holes across a wide range of accretion rates, from sub-Eddington through super-Eddington flows. These simulations address how the structure of the disk, the launching of winds and jets, and the radiative efficiency of the flow change with accretion rate and black hole spin.</p>
+    <p class="people"><b>Collaborators:</b> Lizhong Zhang, Jim Stone, Yan-Fei Jiang, Patrick Mullen, Chris White, Omer Blaes</p>
+    <p class="people"><b>Recent papers:</b></p>
+    <ul>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2026ApJ..1009...49Z/abstract">Radiation GRMHD Models of Accretion onto Stellar-mass Black Holes. III. Near-Eddington Accretion</a>, Zhang et al. 2026, ApJ, 1009, 49</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2026ApJ..1001..138Z/abstract">Radiation GRMHD Models of Accretion onto Stellar-mass Black Holes. II. Super-Eddington Accretion</a>, Zhang et al. 2026, ApJ, 1001, 138</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...995...26Z/abstract">Radiation GRMHD Models of Accretion onto Stellar-mass Black Holes. I. Survey of Eddington Ratios</a>, Zhang et al. 2025, ApJ, 995, 26</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...949..103W/abstract">An Extension of the Athena++ Code Framework for Radiation-magnetohydrodynamics in General Relativity Using a Finite-solid-angle Discretization</a>, White et al. 2023, ApJ, 949, 103</li>
+    </ul>
+  </div>
 </div>
 
+<!-- Spectral modeling -->
+<div class="heading">
+  <h2><big>Spectral Modeling and Post-Processing</big></h2>
+</div>
+<div class="flex-container project">
+  <div>
+    <img alt="Synthetic X-ray spectra computed from simulations of super-Eddington accretion" src="images/research_spectra.png">
+    <p class="caption">Synthetic X-ray spectra computed with Monte Carlo radiation transfer from radiation MHD simulations of super-Eddington accretion onto a stellar-mass black hole. From Mills et al. (2024).</p>
+  </div>
+  <div>
+    <p>Connecting simulations to observations requires computing the spectra and images that the simulated systems would actually produce. We post-process radiation magnetohydrodynamic simulations using the Monte Carlo radiation transfer module in Athena++ and general relativistic ray tracing with the Blacklight code to generate synthetic spectra and images of X-ray binaries, supermassive black hole binaries, and tidal disruption events. We also fit accretion disk spectral models to observations, for example to constrain the spins of accreting black holes.</p>
+    <p class="people"><b>Group members:</b> Tegan Thomas, Bri Mills (former member)<br>
+      <b>Collaborators:</b> Matthew Middleton</p>
+    <p class="people"><b>Recent papers:</b></p>
+    <ul>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2026arXiv260121995K/abstract">Constraining Black Hole Parameters from Shadow and Inner-Shadow Morphology Considering Effects from Thick Disk Accretion Flows</a>, Kearns et al. 2026, arXiv:2601.21995</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...974..166M/abstract">Spectral Calculations of 3D Radiation Magnetohydrodynamic Simulations of Super-Eddington Accretion onto a Stellar-mass Black Hole</a>, Mills et al. 2024, ApJ, 974, 166</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2021ApJ...914....6M/abstract">The Black Hole Spin in GRS 1915+105, Revisited</a>, Mills et al. 2021, ApJ, 914, 6</li>
+    </ul>
+  </div>
+</div>
 
+<!-- SMBH binaries -->
+<div class="heading">
+  <h2><big>Simulations of Supermassive Black Hole Binaries</big></h2>
+</div>
+<div class="flex-container project">
+  <div>
+    <img alt="Density of minidisks in MHD and radiation MHD simulations of an equal-mass massive black hole binary" src="images/research_smbhb.png">
+    <p class="caption">Density of the minidisk around one black hole in an equal-mass binary, comparing MHD and radiation MHD simulations. From Chan et al. (2025).</p>
+  </div>
+  <div>
+    <p>Pairs of supermassive black holes are expected to form after galaxies merge, and they are key targets for pulsar timing arrays and future space-based gravitational wave detectors. We perform radiation magnetohydrodynamic simulations of the circumbinary disks that surround these binaries and the minidisks that form around each black hole, for both equal-mass and unequal-mass systems. These calculations show how radiation alters the structure and thermodynamics of the gas, how accretion is shared between the two black holes, and what electromagnetic signatures might identify these systems.</p>
+    <p class="people"><b>Collaborators:</b> Yan-Fei Jiang, Vishal Tiwari, Edwin Chan, Tamara Bogdanovi&#263;</p>
+    <p class="people"><b>Recent papers:</b></p>
+    <ul>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2026ApJ..1011..136T/abstract">Radiation Magnetohydrodynamic Simulation of Sub-Eddington Circumbinary Disk in a 10:1 Massive Black Hole Binary</a>, Tiwari et al. 2026, ApJ, 1011, 136</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...991...71C/abstract">Radiative Magnetohydrodynamics Simulation of Minidisks in Equal-mass Massive Black Hole Binaries</a>, Chan et al. 2025, ApJ, 991, 71</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...986..158T/abstract">Radiation Magnetohydrodynamic Simulation of Sub-Eddington Circumbinary Disk around an Equal-mass Massive Black Hole Binary</a>, Tiwari et al. 2025, ApJ, 986, 158</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Lyman alpha -->
+<div class="heading">
+  <h2><big>Lyman <var>&alpha;</var> Transfer in Extrasolar Planets</big></h2>
+</div>
+<div class="flex-container project">
+  <div>
+    <img alt="Lyman alpha spectra from Monte Carlo calculations compared with a semi-analytic solution" src="images/lyalp.png">
+    <p class="caption">Binned Monte Carlo spectra compared with a semi-analytic solution (green curve) for resonant scattering in a sphere with a line center optical depth of 10<sup>7</sup>. From McClellan et al. (2022).</p>
+  </div>
+  <div>
+    <p>Lyman <var>&alpha;</var> transit observations probe the extended, escaping upper atmospheres of planets irradiated by their host stars. Because Lyman <var>&alpha;</var> photons scatter many times before escaping optically thick gas, interpreting these observations requires accurate resonant scattering calculations. We have developed semi-analytic solutions for the escape of Lyman <var>&alpha;</var> photons from optically thick media that include a self-consistent treatment of the boundary conditions and agree well with Monte Carlo calculations. These solutions provide the basis for accelerated Monte Carlo methods for modeling Lyman <var>&alpha;</var> transfer in exoplanet atmospheres.</p>
+    <p class="people"><b>Group members:</b> Connor McClellan (former member)<br>
+      <b>Collaborators:</b> Phil Arras, Chase Funkhauser</p>
+    <p class="people"><b>Recent papers:</b></p>
+    <ul>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...934...37M/abstract">A Novel Solution for Resonant Scattering Using Self-consistent Boundary Conditions</a>, McClellan et al. 2022, ApJ, 934, 37</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Disk winds -->
+<div class="heading">
+  <h2><big>Accretion Disk Winds</big></h2>
+</div>
+<div class="flex-container project">
+  <div>
+    <img alt="Density, velocity and ionization parameter in a simulation of an AGN disk wind" src="images/research_winds.png">
+    <p class="caption">Density with velocity vectors (left) and ionization parameter (right) in a time-dependent simulation of a photoionized AGN disk wind. From Dyda et al. (2025).</p>
+  </div>
+  <div>
+    <p>Winds launched from accretion disks around supermassive black holes can carry away substantial mass and energy, and they are seen as blueshifted absorption lines in the spectra of many active galactic nuclei. We perform time-dependent simulations of line-driven disk winds in which the radiation force depends on the ionization state of the gas, including the effects of X-ray irradiation and photoionization from the central source. We also develop improved prescriptions for the line driving force, such as flux-averaged force multipliers, for use in these simulations.</p>
+    <p class="people"><b>Group members:</b> Sergei Dyda (former member)<br>
+      <b>Collaborators:</b> Daniel Proga, Tim Kallman, Randall Dannen</p>
+    <p class="people"><b>Recent papers:</b></p>
+    <ul>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2026MNRAS.550g1364D/abstract">Flux-averaged Force Multipliers</a>, Dyda et al. 2026, MNRAS, 550, stag1364</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2025MNRAS.540.2612D/abstract">Time-dependent AGN Disc Winds - II. Effects of Photoionization</a>, Dyda et al. 2025, MNRAS, 540, 2612</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2024MNRAS.530.5143D/abstract">Time-dependent AGN Disc Winds - I. X-ray Irradiation</a>, Dyda et al. 2024, MNRAS, 530, 5143</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Nuclear transients -->
+<div class="heading">
+  <h2><big>Nuclear Transients and Accretion Disk Interactions</big></h2>
+</div>
+<div class="flex-container project">
+  <div>
+    <img alt="Density evolution as an embedded object perturbs an AGN accretion disk" src="images/research_nuclear.png">
+    <p class="caption">Density in the disk midplane (top) and a vertical slice (bottom) as a star or black hole embedded in an AGN disk perturbs the surrounding flow. From Dodd et al. (2025).</p>
+  </div>
+  <div>
+    <p>The accretion disks of active galactic nuclei can host stars and stellar-mass black holes, and their interactions with the disk may power some of the variable and transient phenomena seen in galactic nuclei. We simulate how embedded objects perturb AGN disks and explore the implications for changing-look AGN and quasi-periodic eruptions. We also study how gas disks around merging black hole binaries drain and evolve, and whether they could produce electromagnetic counterparts to gravitational wave sources detected by LIGO.</p>
+    <p class="people"><b>Group members:</b> Xiaoshan Huang (former member)<br>
+      <b>Collaborators:</b> Sierra Dodd, Enrico Ramirez-Ruiz</p>
+    <p class="people"><b>Recent papers:</b></p>
+    <ul>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2025arXiv250619900D/abstract">Perturbing AGN Accretion Disks with Stars and Moderately Massive Black Holes: Implications for Changing-Look AGN and Quasi-Periodic Eruptions</a>, Dodd et al. 2025, arXiv:2506.19900</li>
+      <li><a href="https://ui.adsabs.harvard.edu/abs/2025ApJ...982L..11H/abstract">Disk Draining in LIGO Progenitor Black Hole Binaries and Its Significance to Electromagnetic Counterparts</a>, Huang et al. 2025, ApJL, 982, L11</li>
+    </ul>
+  </div>
+</div>
+
+<!-- PRE bursts -->
+<div class="heading">
+  <h2><big>Simulations of Photospheric Radius Expansion X-ray Bursts</big></h2>
+</div>
+<div class="flex-container project">
+  <div>
+    <img alt="Illustration of hydrogen accreting onto a neutron star surface and fusing into a helium layer" src="images/research_xrayburst.jpg">
+    <p class="caption">Illustration of accreted hydrogen fusing into helium on the surface of a neutron star, the fuel for thermonuclear X-ray bursts. Credit: NASA's Goddard Space Flight Center.</p>
+  </div>
+  <div>
+    <p>Thermonuclear X-ray bursts occur when material accreted onto the surface of a neutron star ignites in a runaway nuclear burning event. In the most energetic bursts, the luminosity reaches the Eddington limit and radiation pressure lifts the photosphere off the stellar surface. We combine MESA calculations of the burst evolution with radiation hydrodynamic simulations using Athena++ to follow the expansion of the photosphere and the accompanying mass loss. Results from this project are in preparation.</p>
+    <p class="people"><b>Group members:</b> Connor McClellan (former member)<br>
+      <b>Collaborators:</b> Nevin Weinberg, Ishaan Varshney</p>
+  </div>
+</div>
 
   </body>
 </html>
