@@ -46,8 +46,11 @@ img.col { max-width: 85%; height: auto; }
   .flex-banner > div { font-size: 28px; }
   .topnav a { padding: 10px 10px; font-size: 15px; }
   .heading { margin: 12px 8px; }
-  figure { margin: 8px; }
-  iframe { max-width: 100%; }
+  .flex-container:not(.project) img { max-width: min(100%, 250px); }
+  body { line-height: 1.4; }
+  figure { margin: 8px 12px; }
+  /* Embedded PDFs render poorly on phones; the link above the frame still works */
+  iframe { display: none; }
 }
 
 /*# sourceMappingURL=styles.css.map */
