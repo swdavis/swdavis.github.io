@@ -37,4 +37,17 @@ img.col { max-width: 85%; height: auto; }
 
 .heading { margin: 20px; }
 
+/* Narrow screens (phones): stack image/text rows and keep images within the screen */
+@media (max-width: 700px) {
+  p, .flex-container > div, figcaption.front { font-size: 18px; }
+  .flex-container { flex-direction: column; }
+  .flex-container > div { margin: 4px 8px; padding: 4px; }
+  .flex-container img, figure img { max-width: 100%; height: auto !important; margin-left: 0 !important; margin-right: 0 !important; }
+  .flex-banner > div { font-size: 28px; }
+  .topnav a { padding: 10px 10px; font-size: 15px; }
+  .heading { margin: 12px 8px; }
+  figure { margin: 8px; }
+  iframe { max-width: 100%; }
+}
+
 /*# sourceMappingURL=styles.css.map */
